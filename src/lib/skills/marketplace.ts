@@ -10,7 +10,7 @@ import { getPackagedSkillBySkillKey } from "@/lib/skills/catalog";
 import type { SkillStatusEntry } from "@/lib/skills/types";
 
 export type SkillMarketplaceCollectionId =
-  | "claw3d"
+  | "dextora3d"
   | "featured"
   | "installed"
   | "setup-required"
@@ -99,7 +99,7 @@ const SKILL_MARKETPLACE_OVERRIDES: Record<
       "Shared workspace state",
     ],
     featured: true,
-    editorBadge: "Claw3D test",
+    editorBadge: "Dextora3D test",
     hideStats: true,
   },
   soundclaw: {
@@ -155,21 +155,21 @@ const buildFallbackMetadata = (
   const source = skill.source.trim();
   const seed = hashString(`${normalizedKey}:${source}`);
   const category =
-    skill.bundled || source === "openclaw-bundled"
+    skill.bundled || source === "dextora-bundled"
       ? "Built-in"
-      : source === "openclaw-managed"
+      : source === "dextora-managed"
         ? "Installed"
-        : source === "openclaw-workspace"
+        : source === "dextora-workspace"
           ? "Workspace"
-          : source === "openclaw-extra"
+          : source === "dextora-extra"
             ? "Community"
             : "Automation";
   const trustLabel =
-    skill.bundled || source === "openclaw-bundled"
+    skill.bundled || source === "dextora-bundled"
       ? "Verified"
-      : source === "openclaw-managed"
+      : source === "dextora-managed"
         ? "Managed"
-        : source === "openclaw-workspace"
+        : source === "dextora-workspace"
           ? "Workspace"
           : "Community";
   return {
@@ -179,7 +179,7 @@ const buildFallbackMetadata = (
       `${titleCaseWords(skill.name)} capability pack.`,
     trustLabel,
     capabilities: buildFallbackCapabilities(skill),
-    featured: skill.bundled || source === "openclaw-managed",
+    featured: skill.bundled || source === "dextora-managed",
     rating: 4.2 + (seed % 7) / 10,
     installs: 400 + (seed % 9500),
   };
@@ -217,7 +217,7 @@ export const buildSkillMarketplaceEntry = (
   const missingDetails = buildSkillMissingDetails(skill);
   if (packagedSkill && !skill.baseDir.trim()) {
     missingDetails.unshift(
-      "Install this packaged Claw3D skill to make it available on the gateway.",
+      "Install this packaged Dextora3D skill to make it available on the gateway.",
     );
   }
   return {
@@ -252,11 +252,11 @@ export const buildSkillMarketplaceCollections = (
     collections.push({ id: "featured", label: "Featured", entries: featured });
   }
 
-  const claw3d = entries.filter((entry) =>
+  const dextora3d = entries.filter((entry) =>
     getPackagedSkillBySkillKey(entry.skill.skillKey),
   );
-  if (claw3d.length > 0) {
-    collections.push({ id: "claw3d", label: "Claw3D", entries: claw3d });
+  if (dextora3d.length > 0) {
+    collections.push({ id: "dextora3d", label: "Dextora3D", entries: dextora3d });
   }
 
   const installed = entries.filter(

@@ -5,23 +5,23 @@ import { CheckCircle2, ExternalLink } from "lucide-react";
 
 const prerequisites = [
   {
-    label: "OpenClaw installed",
+    label: "Dextora installed",
     detail: "Install via npm, pnpm, or from source",
-    link: "https://docs.openclaw.ai",
+    link: "https://docs.dextora.ai",
     linkLabel: "Installation docs",
   },
   {
     label: "Gateway running",
-    detail: "Start with: openclaw gateway start",
-    command: "openclaw gateway start",
+    detail: "Start with: dextora gateway start",
+    command: "dextora gateway start",
   },
   {
     label: "Gateway URL and token",
-    detail: "Found in ~/.openclaw/openclaw.json or your remote setup",
+    detail: "Found in ~/.dextora/dextora.json or your remote setup",
   },
   {
     label: "Node.js 20+",
-    detail: "Required for running Claw3D locally",
+    detail: "Required for running Dextora3D locally",
     link: "https://nodejs.org",
     linkLabel: "Download Node.js",
   },
@@ -31,7 +31,7 @@ export const PrerequisitesStep = () => (
   <div className="space-y-2.5">
     <p className="text-[13px] leading-5 text-white/70">
       Make sure you have these ready before connecting. If you already have
-      OpenClaw running, you can skip this step.
+      Dextora running, you can skip this step.
     </p>
 
     <div className="space-y-1.5">
@@ -68,12 +68,12 @@ export const PrerequisitesStep = () => (
     <p className="text-[10px] leading-4 text-white/40">
       Need help? Check{" "}
       <a
-        href="https://docs.openclaw.ai"
+        href="https://docs.dextora.ai"
         target="_blank"
         rel="noopener noreferrer"
         className="text-amber-300/70 hover:text-amber-200"
       >
-        docs.openclaw.ai
+        docs.dextora.ai
       </a>{" "}
       or{" "}
       <a

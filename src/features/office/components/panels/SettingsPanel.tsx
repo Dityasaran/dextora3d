@@ -89,7 +89,7 @@ export function SettingsPanel({
           maxLength={48}
           disabled={!officeTitleLoaded}
           onChange={(event) => onOfficeTitleChange(event.target.value)}
-          placeholder="Luke Headquarters"
+          placeholder="Dextora HQ"
           className="mt-3 w-full rounded-md border border-cyan-500/10 bg-black/25 px-3 py-2 text-[11px] uppercase tracking-[0.18em] text-cyan-100 outline-none transition-colors placeholder:text-cyan-100/30 focus:border-cyan-400/30 disabled:cursor-not-allowed disabled:opacity-50"
         />
         <div className="mt-2 text-[10px] text-white/50">
@@ -130,7 +130,7 @@ export function SettingsPanel({
           <div>
             <div className="text-[11px] font-medium text-white">Remote office</div>
             <div className="mt-1 text-[10px] text-white/75">
-              Attach a second read-only office from either another Claw3D or a remote OpenClaw gateway.
+              Attach a second read-only office from either another Dextora3D or a remote Dextora gateway.
             </div>
           </div>
           <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-cyan-200/70">
@@ -174,11 +174,11 @@ export function SettingsPanel({
               }
               className="w-full rounded-md border border-cyan-500/10 bg-black/25 px-3 py-2 text-[11px] text-cyan-100 outline-none transition-colors focus:border-cyan-400/30"
             >
-              <option value="presence_endpoint">Remote Claw3D presence endpoint</option>
-              <option value="openclaw_gateway">Remote OpenClaw gateway</option>
+              <option value="presence_endpoint">Remote Dextora3D presence endpoint</option>
+              <option value="openclaw_gateway">Remote Dextora gateway</option>
             </select>
             <div className="mt-1 text-[10px] text-white/50">
-              Use a presence endpoint when the other machine runs Claw3D. Use gateway mode when the other machine only runs OpenClaw.
+              Use a presence endpoint when the other machine runs Dextora3D. Use gateway mode when the other machine only runs Dextora.
             </div>
           </div>
           <div>
@@ -208,7 +208,7 @@ export function SettingsPanel({
                   className="w-full rounded-md border border-cyan-500/10 bg-black/25 px-3 py-2 text-[11px] text-cyan-100 outline-none transition-colors placeholder:text-cyan-100/30 focus:border-cyan-400/30"
                 />
                 <div className="mt-1 text-[10px] text-white/50">
-                  Studio polls this endpoint server-side when the other machine is also running Claw3D.
+                  Studio polls this endpoint server-side when the other machine is also running Dextora3D.
                 </div>
               </div>
               <div>
@@ -262,7 +262,7 @@ export function SettingsPanel({
                   className="w-full rounded-md border border-cyan-500/10 bg-black/25 px-3 py-2 text-[11px] text-cyan-100 outline-none transition-colors placeholder:text-cyan-100/30 focus:border-cyan-400/30"
                 />
                 <div className="mt-1 text-[10px] text-white/50">
-                  Claw3D connects from the browser directly to the remote OpenClaw gateway and derives a read-only presence snapshot.
+                  Dextora3D connects from the browser directly to the remote Dextora gateway and derives a read-only presence snapshot.
                 </div>
               </div>
               <div>

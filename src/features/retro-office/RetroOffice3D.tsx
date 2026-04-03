@@ -2317,7 +2317,7 @@ export function RetroOffice3D({
   monitorByAgentId = EMPTY_MONITOR_MAP,
   githubSkill = null,
   soundclawEnabled = false,
-  officeTitle = "Luke Headquarters",
+  officeTitle = "Dextora HQ",
   officeTitleLoaded = false,
   remoteOfficeEnabled = false,
   remoteOfficeSourceKind = "presence_endpoint",
@@ -4434,7 +4434,7 @@ export function RetroOffice3D({
         setManualPhoneCallScenario(
           buildMockPhoneCallScenario({
             callee: "my contact",
-            message: "This is a demo call from the OpenClaw phone booth.",
+            message: "This is a demo call from the Dextora phone booth.",
             voiceAvailable:
               voiceRepliesLoaded &&
               Boolean(voiceRepliesVoiceId) &&

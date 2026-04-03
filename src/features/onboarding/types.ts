@@ -36,7 +36,7 @@ export type OnboardingState = {
 export const ONBOARDING_STEPS: OnboardingStep[] = [
   {
     id: "welcome",
-    title: "Welcome to Claw3D",
+    title: "Welcome to Dextora3D",
     description: "Your AI office in 3D",
     skippable: false,
   },
@@ -49,7 +49,7 @@ export const ONBOARDING_STEPS: OnboardingStep[] = [
   {
     id: "connect",
     title: "Connect Your Gateway",
-    description: "Link to your OpenClaw instance",
+    description: "Link to your Dextora instance",
     skippable: false,
   },
   {

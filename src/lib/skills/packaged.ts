@@ -7,7 +7,7 @@ type PackagedSkillFile = {
 const TODO_BOARD_SKILL_MD = `---
 name: todo
 description: Maintain a shared workspace TODO list with blocked tasks.
-metadata: {"openclaw":{"skillKey":"todo-board"}}
+metadata: {"dextora":{"skillKey":"todo-board"}}
 ---
 
 # TODO Board
@@ -144,7 +144,7 @@ const TODO_BOARD_EXAMPLE_JSON = `{
 const SOUNDCLAW_SKILL_MD = `---
 name: soundclaw
 description: Control Spotify playback, search music, and return shareable music links.
-metadata: {"openclaw":{"skillKey":"soundclaw"}}
+metadata: {"dextora":{"skillKey":"soundclaw"}}
 ---
 
 # SOUNDCLAW
@@ -188,10 +188,10 @@ When this skill is activated, the agent should walk to the office jukebox before
 
 ---
 
-## OpenClaw Gateway Skill Contract
+## Dextora Gateway Skill Contract
 
-> This section is for developers implementing the backend skill handler in OpenClaw.
-> The Claw3D UI handles authentication via Spotify PKCE OAuth in the browser.
+> This section is for developers implementing the backend skill handler in Dextora.
+> The Dextora3D UI handles authentication via Spotify PKCE OAuth in the browser.
 > The gateway skill handles agent-driven requests via the \`soundclaw.*\` RPC namespace.
 
 ### Authentication model

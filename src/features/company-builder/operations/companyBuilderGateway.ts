@@ -38,7 +38,7 @@ export const buildCompanyRolePermissionsDraft = (
   fileTools: commandMode !== "off",
 });
 
-export async function runOpenClawPlanningPrompt(params: {
+export async function runDextoraPlanningPrompt(params: {
   client: GatewayClientLike;
   dispatch: (action: DispatchAction) => void;
   agent: AgentState;

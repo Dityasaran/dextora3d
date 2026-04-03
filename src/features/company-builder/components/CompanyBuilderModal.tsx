@@ -194,7 +194,7 @@ export function CompanyBuilderModal({
             </div>
             <h2 className="mt-1 text-lg font-semibold">Design an AI company from one prompt</h2>
             <p className="mt-1 text-sm text-white/55">
-              Uses your connected OpenClaw runtime
+              Uses your connected Dextora runtime
               {plannerAgentName ? ` via ${plannerAgentName}.` : "."}
             </p>
           </div>
@@ -293,7 +293,7 @@ export function CompanyBuilderModal({
                   <div className="text-sm leading-6 text-white/70">
                     {input.businessDescription.trim()
                       ? input.businessDescription
-                      : "Describe what the company should do and Claw3D will immediately turn it into an improved brief."}
+                      : "Describe what the company should do and Dextora3D will immediately turn it into an improved brief."}
                   </div>
                 </div>
               </div>
@@ -329,7 +329,7 @@ export function CompanyBuilderModal({
                     Company Actions
                   </p>
                   <p className="mt-1 text-[11px] text-white/45">
-                    Generate the org, then create it in OpenClaw.
+                    Generate the org, then create it in Dextora.
                   </p>
                 </div>
                 {replacesExistingAgents ? (
@@ -341,7 +341,7 @@ export function CompanyBuilderModal({
                 ) : null}
                 {!canUseAi ? (
                   <p className="text-xs text-amber-200/80">
-                    Connect to OpenClaw and keep at least one available planning agent in the fleet
+                    Connect to Dextora and keep at least one available planning agent in the fleet
                     to use AI suggestions.
                   </p>
                 ) : null}
@@ -416,7 +416,7 @@ export function CompanyBuilderModal({
                   <div>
                     <p className="text-sm font-semibold text-white">Org structure</p>
                     <p className="text-xs text-white/55">
-                      Edit the team before creating agents in OpenClaw.
+                      Edit the team before creating agents in Dextora.
                     </p>
                   </div>
                   <button
@@ -686,7 +686,7 @@ export function CompanyBuilderModal({
                   <Sparkles className="mx-auto h-8 w-8 text-cyan-300/70" />
                   <p className="text-lg font-semibold text-white">No company generated yet</p>
                   <p className="text-sm text-white/55">
-                    Start by describing the company. Claw3D will create the improved brief
+                    Start by describing the company. Dextora3D will create the improved brief
                     automatically, then you can generate and edit the org structure before anything
                     is created.
                   </p>
@@ -704,7 +704,7 @@ export function CompanyBuilderModal({
               {statusLine?.trim() || "Working on your company."}
             </p>
             <p className="mt-2 text-xs leading-5 text-white/55">
-              Claw3D is using your OpenClaw runtime right now. Please wait until this finishes.
+              Dextora3D is using your Dextora runtime right now. Please wait until this finishes.
             </p>
             <div className="mt-5 flex gap-2">
               {Array.from({ length: 4 }, (_, index) => (
@@ -897,7 +897,7 @@ export function CompanyBuilderModal({
                   What should the company do?
                 </p>
                 <p className="mt-2 text-sm text-white/55">
-                  As soon as you submit this, OpenClaw will improve the brief automatically.
+                  As soon as you submit this, Dextora will improve the brief automatically.
                 </p>
               </div>
               <button

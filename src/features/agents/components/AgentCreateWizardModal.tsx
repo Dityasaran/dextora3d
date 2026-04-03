@@ -368,7 +368,7 @@ export function AgentCreateWizardModal({
               </section>
 
               <div className="mt-6 rounded-xl border border-border/45 bg-muted/20 p-4 text-sm text-muted-foreground">
-                Creating the agent in this step makes it available in OpenClaw immediately so the
+                Creating the agent in this step makes it available in Dextora immediately so the
                 wizard can save the full profile through the gateway in later steps.
               </div>
             </div>
@@ -495,7 +495,7 @@ export function AgentCreateWizardModal({
                         <WizardTextAreaField
                           label="Context"
                           value={draft.user.context}
-                          placeholder="e.g. Building Claw3D, likes practical UI improvements, and wants direct feedback."
+                          placeholder="e.g. Building Dextora3D, likes practical UI improvements, and wants direct feedback."
                           disabled={isWorking}
                           rows={7}
                           onChange={(value) => {

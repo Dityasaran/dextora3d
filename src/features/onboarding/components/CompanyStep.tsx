@@ -23,7 +23,7 @@ export const CompanyStep = ({
           <div className="space-y-2">
             <p className="text-sm font-semibold text-white">Bootstrap your company with AI</p>
             <p className="text-xs leading-5 text-white/60">
-              Describe what your company does and Claw3D can turn that into a full org structure
+              Describe what your company does and Dextora3D can turn that into a full org structure
               with specialized agents, working files, and role instructions.
             </p>
           </div>
@@ -35,7 +35,7 @@ export const CompanyStep = ({
           {
             icon: Sparkles,
             title: "Improve the brief",
-            description: "Use your connected OpenClaw runtime to sharpen the company prompt.",
+            description: "Use your connected Dextora runtime to sharpen the company prompt.",
           },
           {
             icon: Users,
@@ -45,7 +45,7 @@ export const CompanyStep = ({
           {
             icon: Wand2,
             title: "Create everything",
-            description: "Write agent files and create the team directly in OpenClaw.",
+            description: "Write agent files and create the team directly in Dextora.",
           },
         ].map(({ icon: Icon, title, description }) => (
           <div
@@ -73,7 +73,7 @@ export const CompanyStep = ({
           </div>
         ) : (
           <div className="rounded-md border border-amber-500/20 bg-amber-500/10 px-4 py-3 text-xs text-amber-100/80">
-            Connect to OpenClaw and keep at least one planning agent available to generate the
+            Connect to Dextora and keep at least one planning agent available to generate the
             company with AI.
           </div>
         )}
