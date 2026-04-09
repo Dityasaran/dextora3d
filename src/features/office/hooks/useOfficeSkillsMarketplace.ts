@@ -309,8 +309,8 @@ export const useOfficeSkillsMarketplace = ({
             client,
             skillKey: skill.skillKey,
             source: skill.source as
-              | "dextora-managed"
-              | "dextora-workspace",
+              | "openclaw-managed"
+              | "openclaw-workspace",
             baseDir: skill.baseDir,
             workspaceDir: report.workspaceDir,
             managedSkillsDir: report.managedSkillsDir,

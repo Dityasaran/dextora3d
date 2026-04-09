@@ -20,7 +20,11 @@ export type SkillInstallOption = {
   bins: string[];
 };
 
-export type RemovableSkillSource = "openclaw-managed" | "openclaw-workspace";
+export type RemovableSkillSource =
+  | "openclaw-managed"
+  | "openclaw-workspace"
+  | "dextora-managed"
+  | "dextora-workspace";
 
 export type SkillStatusEntry = {
   name: string;

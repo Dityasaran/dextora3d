@@ -285,9 +285,9 @@ export const buildSkillMarketplaceCollections = (
     const groupEntries = group.skills.map(buildSkillMarketplaceEntry);
     const groupId =
       group.id === "built-in" ||
-      group.id === "workspace" ||
-      group.id === "extra" ||
-      group.id === "other"
+        group.id === "workspace" ||
+        group.id === "extra" ||
+        group.id === "other"
         ? group.id
         : "installed";
     collections.push({
